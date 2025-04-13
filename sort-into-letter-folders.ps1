@@ -1,4 +1,8 @@
-﻿$list = @()
+﻿#https://github.com/UpdogUpdogUpdog/sort-into-letter-folders
+#https://ko-fi.com/updogupdogupdog
+#I love you.
+
+$list = @()
 65..90 | foreach {
     $letter=[char]$_
     New-Item -Path .\ -Name $letter -ItemType "directory"  
