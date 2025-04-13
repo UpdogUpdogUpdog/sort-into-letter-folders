@@ -1,51 +1,94 @@
-# sort-into-letter-folders.ps1
-This powershell script sorts a directory full of files into 27 directories based on the first letter of the filename A-Z, and #. 
+# 📁 sort-into-letter-folders.ps1
 
-Very useful for organizing large directories of rom files on retro gaming handhelds. 
+This PowerShell script **sorts all files and folders in the current directory into 27 alphabetical folders** (`A`–`Z` and `#` for non-alphabetic names).
 
-**WARNING!** This can and will move files AND directories without any confirmation about the action.
+✅ **Perfect for organizing large ROM libraries on retro gaming handhelds.**  
+⚠️ **Moves both files and folders with NO confirmation. Use carefully!**
 
-**DO NOT DOUBLE CLICK THE SCRIPT UNLESS ITS IN THE DIRECTORY YOU INTEND TO ALPHABETIZE**
+---
 
-Use this at your own risk, understanding the action you're about to do has no undo button.
+## ⚠️ WARNING
 
-# How to use:
+> 💣 **This script will move all files and folders in its directory**  
+> 🔄 There is **no undo**  
+> ❌ **Do NOT double-click it blindly**
 
-* Save the script somewhere. If you have a directory you'd like to organize, put it there. Things will be easier this way.
+**Always run the script from powershell ise so you are confident you are working with the directory you want to sort.**
 
-* Click Start and type `ise` and launch Powershell ISE.
+---
 
-![image](https://github.com/user-attachments/assets/aada3909-8057-4834-b8a8-cba285d6c9c9)
+## 🛠️ How to Use
 
-* Click the open file button and navigate to the script and open the .ps1 file.
+### 1. 💾 Save and Move the Script
+- Save the script somewhere away from important or other system files.
 
-![image](https://github.com/user-attachments/assets/04909251-e2fc-4049-8e29-c656c18487d2)
+---
 
-* Click View > Show Script Pane
+### 2. 🧭 Open PowerShell ISE
+- Press `Start` and type `ise`, then open **Windows PowerShell ISE**.
 
-![image](https://github.com/user-attachments/assets/3080b06b-1df4-457f-8f45-29ef9eb9ef0c)
+![Open PowerShell ISE](https://github.com/user-attachments/assets/aada3909-8057-4834-b8a8-cba285d6c9c9)
 
+---
 
-* In the blue terminal area at the bottom of the screen, navigate to the directory you want to organize with the command `cd` followed by the directory path you are interested in running the script against.
+### 3. 📂 Open the Script
+- Click the **Open File** icon.
+- Locate and open the `.ps1` script.
 
-For my example, my SD card has a path called `I:\ROMS\GB` so I enter `cd I:\ROMS\GB` and press enter
+![Open .ps1 file](https://github.com/user-attachments/assets/04909251-e2fc-4049-8e29-c656c18487d2)
 
-![image](https://github.com/user-attachments/assets/6ef491ad-e87c-4a16-b7cf-eb3121b09fb8)
+---
 
-* In the blue terminal, run the command `dir` and press enter to confirm this is the contents of the directory you will be organizing.
+### 4. 📝 Show the Script Pane
+- Go to **View → Show Script Pane**.
 
-Every file and folder visible in the results will be reorganized if you proceed. 
+![Show script pane](https://github.com/user-attachments/assets/3080b06b-1df4-457f-8f45-29ef9eb9ef0c)
 
-![image](https://github.com/user-attachments/assets/88ad15f5-3b4a-4ed8-ab36-11583f2014fb)
+---
 
-* Press the `F5` key or click the green Play button at the top of the Powershell ISE window.
+### 5. 📁 Navigate to the Folder You Want to Sort
+In the **blue terminal pane** at the bottom:
 
-Note: If any directories are empty after the reorganization is done, they will be removed to keep things tidy.
+```powershell
+cd I:\ROMS\GB
+```
 
-If you want to keep them, just delete the last line of the script before you continue. 
+(Replace with your folder path.)
 
-![image](https://github.com/user-attachments/assets/8d213016-c59d-48d4-8966-1b8ff655dcf6)
+![cd example](https://github.com/user-attachments/assets/6ef491ad-e87c-4a16-b7cf-eb3121b09fb8)
 
-* Observe the new directory structure. 
+---
 
-![image](https://github.com/user-attachments/assets/200ceb5f-e7c5-4806-a43c-4360dabe3b22)
+### 6. 👀 Confirm Folder Contents
+
+Run this to confirm:
+
+```powershell
+dir
+```
+
+Everything listed will be sorted.
+
+![dir command output](https://github.com/user-attachments/assets/88ad15f5-3b4a-4ed8-ab36-11583f2014fb)
+
+---
+
+### 7. ▶️ Run the Script
+
+Press `F5` or click the **green Play** button.
+
+> 🧹 Empty folders are automatically removed afterward.  
+> 🛑 To keep them, **delete the last line of the script before running.**
+
+![Run the script](https://github.com/user-attachments/assets/8d213016-c59d-48d4-8966-1b8ff655dcf6)
+
+---
+
+### 8. 📦 Done! Check Your New Folder Structure
+
+![Sorted result](https://github.com/user-attachments/assets/200ceb5f-e7c5-4806-a43c-4360dabe3b22)
+
+Enjoy your newly organized directory!
+
+If I saved you a minute, buy me a coffee?
+[![ko-fi](https://ko-fi.com/img/githubbutton_sm.svg)](https://ko-fi.com/W7W51DFJQG)
