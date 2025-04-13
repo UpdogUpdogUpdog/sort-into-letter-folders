@@ -91,4 +91,5 @@ Press `F5` or click the **green Play** button.
 Enjoy your newly organized directory!
 
 If I saved you a minute, buy me a coffee?
+
 [![ko-fi](https://ko-fi.com/img/githubbutton_sm.svg)](https://ko-fi.com/W7W51DFJQG)
